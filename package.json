@@ -1,0 +1,15 @@
+{
+  "name": "filemonitor",
+  "description": "Monitor filesystem events in node.js. Watch for file changes and run callbacks.",
+  "version": "0.1.0",
+  "homepage": "http://github.com/krlito/filemonitor-node.git",
+  "author": "Carlos Campo <carlos@campo.com.co>",
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/krlito/filemonitor-node.git"
+  },
+  "directories": {
+    "lib": "./lib"
+  }
+}
+                                      
