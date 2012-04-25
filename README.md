@@ -54,6 +54,7 @@ The following events are captured by the module:
 ##Usage
 
 To monitor a file is as easy as:
+
 ```javascript
     var filemon = require('filemonitor');
     
@@ -70,6 +71,7 @@ To monitor a file is as easy as:
     }
     
     filemon.watch(options);
+```
 
 First, the module is instantiated. Then, an options object is set including a target file and a callback function in case any event is captured.
 Finally, `filemon.watch(options)` is called to start monitoring.
@@ -120,7 +122,7 @@ For monitoring a complete directory waiting for newly created files:
     }
     
     filemon.watch(options);
-
+```
 
 Watching multiple files. On file creation or modification, then do something.
  
@@ -146,7 +148,7 @@ Watching multiple files. On file creation or modification, then do something.
     }
     
     filemon.watch(options);
-
+```
 
 ###Other comments...
 - Once the `watch` function has been called, options cannot be changed.
