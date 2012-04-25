@@ -124,7 +124,8 @@ For monitoring a complete directory waiting for newly created files:
     filemon.watch(options);
 ```
 
-Watching multiple files. On file creation or modification, then do something.
+
+Another example for watching multiple files and excluding some others:
  
 ```javascript
     var filemon = require('filemonitor');
@@ -158,3 +159,4 @@ Watching multiple files. On file creation or modification, then do something.
 [inotifywait]: http://github.com/rvoicilas/inotify-tools/wiki
 [inotify-tools]: http://github.com/rvoicilas/inotify-tools/wiki
 [getting-inotify-tools]: http://github.com/rvoicilas/inotify-tools/wiki/#wiki-getting
+
