@@ -8,13 +8,16 @@ for the directory itself and its files.
 ##Requirements
 
 Filemonitor-node is an only-Linux module. It depends on [inotify-tools]. To install inotify-tools on a Linux (Debian/Ubuntu) system:
+
     sudo apt-get install inotify-tools
+
 For installing on other linux flavors, go [here][getting-inotify-tools].
 
 
 ##Installation
 
 On your project directory:
+
     npm install filemonitor
 
 
@@ -51,7 +54,7 @@ The following events are captured by the module:
 ##Usage
 
 To monitor a file is as easy as:
-
+```javascript
     var filemon = require('filemonitor');
     
     var onFileEvent = function (ev) {
@@ -96,6 +99,7 @@ The options to configure filemonitor-node include:
 
 For monitoring a complete directory waiting for newly created files:
 
+```javascript
     var filemon = require('filemonitor');
     
     var onFileEvent = function (ev) {
@@ -120,6 +124,7 @@ For monitoring a complete directory waiting for newly created files:
 
 Watching multiple files. On file creation or modification, then do something.
  
+```javascript
     var filemon = require('filemonitor');
     
     var onFileChange = function (ev) {
