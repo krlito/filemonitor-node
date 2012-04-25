@@ -7,7 +7,7 @@ for the directory itself and its files.
 
 ##Requirements
 
-Filemonitor-node is an only-Linux module. It depends on [inotify-tools]. To install inotify-tools on a Linux (Debian/Ubuntu) system:
+Filemonitor-node depends on [inotify-tools]. To install inotify-tools on a Linux (Debian/Ubuntu) system:
 
     sudo apt-get install inotify-tools
 
@@ -66,19 +66,19 @@ To monitor a file is as easy as:
     var options = {
       target: "./docs/myfile.txt",
       listeners: {
-        all_events: onFileModified 
+        all_events: onFileEvent
       }
     }
     
     filemon.watch(options);
 ```
 
-First, the module is instantiated. Then, an options object is set including a target file and a callback function in case any event is captured.
+In the previous example, the module was instantiated. Then, an options object is set including a target file and a callback function in case an event is captured.
 Finally, `filemon.watch(options)` is called to start monitoring.
 
 
 ###Event Object
-Each time an event is captured, its assigned callback is called with an event object as argument. This object has the following properties:
+Each time an event is captured, its callback is called passing an event object as argument. This object has the following properties:
 - **filename** is a string with the relative path to the watched file/directory.
 - **eventId** is a string whose value is one of the events names described in *Events* section.
 - **isDir** is `true` if what is being watched is a directory. Otherwise, `false`.
