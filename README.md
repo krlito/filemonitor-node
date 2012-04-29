@@ -44,8 +44,8 @@ The following events are captured by the module:
   listening for both moved_to and moved_from, hence all close events received will be output as one or both of these, not MOVE.
 - **move_self**: A watched file or directory was moved. After this event, the file or directory is no longer being watched.
 - **create**: A file or directory was created within a watched directory.
-- **delete**: A file or directory within a watched directory was deleted.
-- **delete_self**: A watched file or directory was deleted. After this event the file or directory is no longer being watched.
+- **remove**: A file or directory within a watched directory was deleted.
+- **remove_self**: A watched file or directory was deleted. After this event the file or directory is no longer being watched.
   Note that this event can occur even if it is not explicitly being listened for.
 - **unmount**: The filesystem on which a watched file or directory resides was unmounted. After this event the file or directory 
   is no longer being watched. Note that this event can occur even if it is not explicitly being listened to.
