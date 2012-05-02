@@ -154,7 +154,8 @@ Another example for watching multiple files and excluding some others:
 ###Other comments...
 - Once the `watch` function has been called, options cannot be changed.
 - Monitoring can be stopped calling function `filemon.stop()`.
-
+- For monitoring a single file, it should be easier to use `watch` 
+  in the standard file system node.js API.
 
 [inotifywait]: http://github.com/rvoicilas/inotify-tools/wiki
 [inotify-tools]: http://github.com/rvoicilas/inotify-tools/wiki
