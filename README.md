@@ -1,3 +1,4 @@
+[![build status](https://secure.travis-ci.org/krlito/filemonitor-node.png)](http://travis-ci.org/krlito/filemonitor-node)
 #filemonitor-node
 
 This node module is a thin wrapper around the [inotifywait][] command. It can be used to monitor and act upon file system events. 
